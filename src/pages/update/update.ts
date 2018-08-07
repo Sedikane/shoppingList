@@ -30,7 +30,7 @@ export class UpdatePage {
   update(){
  
     var database = firebase.database();
-    database.ref('/shoppingList/' + this.item.key).set({name:this.name});
+    database.ref('/cuisine/' + this.item.key).set({name:this.name});
  
     this.navCtrl.push("HomePage");
   }
